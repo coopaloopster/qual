@@ -175,9 +175,38 @@
                     <img border="0" src="Outline_sub2.png" alt="Outline" width="750" height="500">
                     </section>
                     <section>
-                    <h1>
-                        Some stuff
-                    </h1>
+                    <h3>
+                        St&#252ckelberg fields for Diffeomorphisms
+                    </h3>
+                    <p class="fragment">
+                    $$ \mathcal{L} = -\frac{1}{2} F_{\mu \nu}^{\dagger} F^{\mu \nu} + m^2 (A_{\mu}^{\dagger} - \frac{1}{m}\partial_{\mu} B^{\dagger})(A^{\mu} -
+                    \frac{1}{m} \partial^{\mu} B) \\ - (\partial^{\mu} A^{\dagger}_{\mu} + m B^{\dagger})(\partial_{\nu} A^{\nu} + m B) $$
+                    </p>
+                    <p class="fragment">$$ A_{\mu}(x) \rightarrow A_{\mu}(x) + \partial_{\mu}\Lambda(x) \\ B(x) \rightarrow B(x) + m \Lambda(x) $$</p>
+                    <p class="fragment"> How can we apply this procedure to diffeomorphisms? </p>
+                    </section>
+                    <section>
+                    $$ \mathcal{S} = -M_{Pl}^2 \int d^4x \sqrt{-g}R + \int d^4 x \sqrt{-g} F $$
+                    <p class="fragment"> Introduce 4 fields corresponding to the broken diffs: $$ x^{\mu} \rightarrow \xi^{\mu}(x) $$ such that these fields admit the following
+                    equations of motion $$ \phi^{\mu}(x) = \Lambda^2 x^{\mu} \; \; \; g_{\mu \nu} = \eta_{\mu \nu} $$
+                    </p>
+                    </section>
+                    <section>
+                    $$ g_{\mu \nu} (x) \rightarrow \hat{g}_{\mu \nu} \equiv \frac{\partial Y^{\lambda}(x)}{\partial x^{\mu}}\frac{\partial Y^{\rho}(x)}{\partial x^{\nu}}
+                    g_{\lambda \rho} (Y(x))$$
+                    $$ \hat{Y}: x^{\mu} \rightarrow Y^{\mu}(x)$$
+                    <p class="fragment"> The components of the diffeomorphism follow a strange transformation law, the components of the inverse diffs on the other hand behave
+                    exactly like a scalar.  These are our desired goldstones $$ Y^{\mu} \rightarrow (\xi^{-1} \circ \hat{Y})^{\mu} \\ (Y^{-1})^{\mu} \rightarrow (\hat{Y}^{-1} \circ \xi)^{\mu}
+                    \therefore \phi^{\mu} \equiv (Y^{-1})^{\mu}$$
+                    </p>
+                    </section>
+                    <section>
+                    <h3> Future Directions </h3>
+                    <p class="fragment"> By exhausting posssible seed terms using the GM procedure, it seems that all operators compatible with the non-linear symmetry are in fact
+                    generated in the linear Lagrangian by the geometric invariants of the worldsheet.  Our next task to start in the static gauge, and restore diffeomorphism invariance
+                    via the st&#252ckelberg fields, and see that this procedure does in fact realize D-dimensional Poincar&#233 when the st&#252ckelberg fields are joined with the
+                    transverse fields in a D-dim multiplet.
+                    </p>
                     </section>
                 </section>
 
@@ -188,12 +217,36 @@
                         <img border="0" src="Outline_sub3.png" alt="Outline" width="750" height="500">
                     </section>
                     <section>
-                        <h1>
-                            Some stuff
-                        </h1>
+                        <img border="0" src="observables.png" alt="Observables" width="750" height="500">
                     </section>
                     <section>
-                        <img border="0" src="observables.png" alt="Outline" width="750" height="500">
+                        <p class="fragment"> Observables in quantum field theory must be gauge invariant objects since gauge invariance is just a redundancy of our description.
+                         This amounts to the corresponding Hilbert space operator commuting with the generator of gauge transformations.  For GCT's not even a scalar field could
+                         be a local observable because it's variation implies that it's simply a constant field
+                         $$ \delta \phi \propto \epsilon^{\mu} \partial_{\mu} \phi \therefore \delta \phi = 0 \implies \partial_{\mu} \phi = 0 \; \; \forall \mu \in \{0,\cdots,D-1 \} $$
+                        </p>
+                        <p class="fragment">
+                        Although we don't have a control over the UV completion of gravity, low-energy local observables should still remain invariant w.r.t. the low energy gauge
+                        invariances.
+                        </p>
+                    </section>
+                    <section>
+                    $$ \mathcal{O} = \int d^4 x \sqrt{-g} \hat{\mathcal{O}}$$
+                    <p> An operator of this form is non-local but commutes with the constraints (the Wheeler-DeWitt equations) </p>
+                    $$ \mathcal{H} |\Psi\rangle = 0, \; \; \; \mathcal{H}_i |\Psi\rangle = 0 $$
+                    This can be verified using the Heisenberg equations of motion for O
+                    $$ i \frac{\partial}{\partial t} \hat{\mathcal{O}}(x) = [\hat{\mathcal{O}}(x),\int_{\Sigma} (N\mathcal{H} + N^i \mathcal{H}_i)]. $$
+                    </section>
+                    <section>
+                    <h3> Relational Observables </h3>
+                    Our theory consists of sets of scalars
+                    $$  \phi^a \; \; \; \; \; \; \; \; Z^i $$
+                    <p class="fragment"> We "instrument" our spacetime by preparing a background state in which the scalar fields take on a vev proportional to the spacetime coordinates.
+                    These play the role of our "clocks and rods".
+                    $$ \langle \Psi_Z | Z^i | \Psi_Z \rangle = \lambda \delta_{\mu}^i x^{\mu} $$
+                    </section>
+                    <section>
+                    $$ O_{g,\xi} = \int d^4x \sqrt{-g} \mathcal{O}(x)e^{-\frac{1}{\sigma^2}(Z^i - \xi^i)^2} $$
                     </section>
                 </section>
 
